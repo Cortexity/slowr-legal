@@ -56,26 +56,12 @@
       padding: 48px 24px 80px;
     }
 
-    .meta {
-      background: var(--burgundy-light);
-      border: 1px solid var(--burgundy-mid);
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin-bottom: 40px;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    .meta strong {
-      color: var(--text);
-    }
-
     h1 {
       font-family: 'DM Serif Display', serif;
       font-size: 32px;
       font-weight: 400;
       color: var(--burgundy);
-      margin-bottom: 8px;
+      margin-bottom: 24px;
       line-height: 1.2;
     }
 
@@ -153,16 +139,10 @@
 
   <h1>Privacy Policy</h1>
 
-  <div class="meta">
-    <strong>Effective date:</strong> 4 April 2025 &nbsp;·&nbsp;
-    <strong>Company:</strong> Cortexity Ltd &nbsp;·&nbsp;
-    <strong>Contact:</strong> <a href="mailto:joseph@cortexity.xyz">joseph@cortexity.xyz</a>
-  </div>
-
-  <p>This Privacy Policy explains how <strong>Cortexity Ltd</strong> ("we", "us", or "our") handles information in connection with the <strong>Slowr</strong> iOS application ("App"). We are committed to protecting your privacy. Please read this policy carefully.</p>
+  <p>This Privacy Policy explains how <strong>Cortexity Ltd</strong> ("we", "us", or "our") handles information in connection with the <strong>Slowr</strong> iOS application ("App"). Effective date: 5 April 2025. We are committed to protecting your privacy. Please read this policy carefully.</p>
 
   <div class="highlight-box">
-    <strong>Short version:</strong> We do not sell your data. We do not run ads. Almost everything stays on your device. The only third-party services we use are Apple (for payments) and Firebase (for remote app configuration).
+    <strong>Short version:</strong> We do not sell your data. Almost everything stays on your device. The third-party services we use are Apple (for payments), Firebase (for remote app configuration), and Meta (Facebook) for measuring ad performance.
   </div>
 
   <h2>1. Information We Collect</h2>
@@ -185,39 +165,56 @@
     <li>Google's <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> governs Firebase's data handling.</li>
   </ul>
 
+  <p><strong>Information processed by Meta (Facebook) — ad measurement only:</strong></p>
+  <ul>
+    <li>We use the <strong>Meta (Facebook) SDK</strong> to measure the effectiveness of our advertising campaigns. This means that if you arrived at the App via a Facebook or Instagram ad, Meta may receive a signal that you installed the App or started a subscription trial. This helps us understand which ads are working — it does not enable Meta to show you ads inside Slowr, and we do not send them your workout data.</li>
+    <li>The Meta SDK may use your device's advertising identifier (IDFA) <strong>only if you grant permission</strong> through Apple's App Tracking Transparency (ATT) prompt when you first open the App. If you decline, no IDFA is shared.</li>
+    <li>The events we send to Meta are limited to: <em>app install</em>, <em>trial started</em>, and <em>subscription purchased</em>. No health, workout, or personal data is included.</li>
+    <li>Meta's <a href="https://www.facebook.com/privacy/policy/" target="_blank">Privacy Policy</a> governs how they handle this data.</li>
+  </ul>
+
   <p><strong>We do not collect:</strong></p>
   <ul>
     <li>Your name, email address, or any contact information</li>
     <li>Location data</li>
     <li>Health data submitted to Apple Health / HealthKit</li>
-    <li>Advertising identifiers</li>
     <li>Crash reports or analytics beyond what Firebase Remote Config incidentally processes</li>
   </ul>
 
-  <h2>2. How We Use Information</h2>
-  <p>The limited data that passes through third-party services (Apple, Firebase) is used solely to:</p>
+  <h2>2. App Tracking Transparency (ATT)</h2>
+  <p>When you first open Slowr, iOS will show you Apple's standard App Tracking Transparency prompt asking whether you allow the App to track your activity across other companies' apps and websites. This permission governs whether the Meta SDK can use your IDFA for ad measurement.</p>
+  <ul>
+    <li><strong>If you allow:</strong> Meta may use your IDFA to attribute your install or subscription to one of our ads.</li>
+    <li><strong>If you decline:</strong> No advertising identifier is shared. The Meta SDK will still receive the limited conversion events listed above, but without a device-level identifier linking them to you personally.</li>
+  </ul>
+  <p>You can change this permission at any time in <strong>iPhone Settings → Privacy &amp; Security → Tracking</strong>.</p>
+
+  <h2>3. How We Use Information</h2>
+  <p>The limited data that passes through third-party services (Apple, Firebase, Meta) is used solely to:</p>
   <ul>
     <li>Process your subscription and verify your entitlement to use premium features</li>
     <li>Deliver remote configuration so we can improve the app without requiring you to update</li>
     <li>A/B test pricing options (this involves no personally identifiable information on our end)</li>
+    <li>Measure the performance of our advertising campaigns on Facebook and Instagram</li>
   </ul>
-  <p>We do not use any data for advertising, profiling, or selling to third parties.</p>
+  <p>We do not use any data for profiling or selling to third parties.</p>
 
-  <h2>3. Data Sharing</h2>
+  <h2>4. Data Sharing</h2>
   <p>We do not sell, trade, or rent your personal information to anyone. The only parties that receive any data related to your use of the App are:</p>
   <ul>
     <li><strong>Apple Inc.</strong> — for payment processing and subscription management</li>
     <li><strong>Google LLC (Firebase)</strong> — for remote configuration delivery</li>
+    <li><strong>Meta Platforms, Inc.</strong> — for ad conversion measurement only (install, trial start, purchase events)</li>
   </ul>
-  <p>Both are bound by their own privacy policies and applicable data protection law.</p>
+  <p>All three are bound by their own privacy policies and applicable data protection law.</p>
 
-  <h2>4. Data Retention</h2>
+  <h2>5. Data Retention</h2>
   <p>Your workout data lives exclusively on your device and is retained until you delete the App or clear its data. We do not store your data on our servers. Deleting the App removes all locally stored data.</p>
 
-  <h2>5. Children's Privacy</h2>
-  <p>The App is not directed at children under the age of 17. We do not knowingly collect personal information from anyone under 17. If you believe a minor has used the App, please contact us and we will take appropriate action.</p>
+  <h2>6. Children's Privacy</h2>
+  <p>The App is not directed at children under the age of 16. We do not knowingly collect personal information from anyone under 16. If you believe a minor has used the App, please contact us and we will take appropriate action.</p>
 
-  <h2>6. Your Rights (UK &amp; EEA Users)</h2>
+  <h2>7. Your Rights (UK &amp; EEA Users)</h2>
   <p>As Cortexity Ltd is registered in the United Kingdom, we operate under the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. Depending on your location, you may have the right to:</p>
   <ul>
     <li>Access, correct, or delete personal data we hold about you</li>
@@ -226,16 +223,16 @@
   </ul>
   <p>Since almost all data remains on your device and is not transmitted to us, most of these rights are exercised directly by managing or deleting the App. For any questions, contact us at <a href="mailto:joseph@cortexity.xyz">joseph@cortexity.xyz</a>.</p>
 
-  <h2>7. Security</h2>
+  <h2>8. Security</h2>
   <p>We take reasonable precautions to protect information. Because your workout and progress data never leaves your device, the primary security layer is the security of your iPhone (device passcode, Face ID, etc.), which is managed by Apple's iOS.</p>
 
-  <h2>8. Third-Party Links</h2>
+  <h2>9. Third-Party Links</h2>
   <p>The App may link to third-party websites (for example, our Terms of Use page or Apple's App Store). We are not responsible for the privacy practices of those sites.</p>
 
-  <h2>9. Changes to This Policy</h2>
+  <h2>10. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. We will update the effective date at the top of this page when we do. Continued use of the App after any changes constitutes acceptance of the updated policy. For material changes, we will make reasonable efforts to notify you within the App.</p>
 
-  <h2>10. Contact Us</h2>
+  <h2>11. Contact Us</h2>
   <p>If you have any questions or concerns about this Privacy Policy, please contact:</p>
   <p>
     <strong>Cortexity Ltd</strong><br />
